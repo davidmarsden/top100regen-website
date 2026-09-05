@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="archive-page">
+  <header class="archive-intro">
+    <span class="eyebrow">REGEN PEOPLE</span>
+    <h1>Managers</h1>
+    <p>Top 100 Regen is run by its managers. This page collects manager-related updates published on the Regen site — appointments, departures, transfer bans and other notices about the people running the clubs.</p>
+    <p>Looking for a club of your own? <a href="/join/">See how to join Top 100 Regen →</a></p>
+  </header>
+
+  <section class="archive-on-site">
+    <div class="archive-section-heading">
+      <span class="eyebrow">MANAGER NEWS</span>
+      <h2>Updates</h2>
+      <p>{{ len .Pages }} manager-related posts.</p>
+    </div>
+
+    <div class="archive-year">
+      <div class="archive-year__posts">
+        {{ range .Pages.ByDate.Reverse }}
+          <article class="archive-row">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+            <div>
+              {{ if .Title }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              {{ else }}
+                <a href="{{ .Permalink }}">Manager update</a>
+              {{ end }}
+              {{ with .Summary }}<small>{{ . | plainify | truncate 150 }}</small>{{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</section>
+{{ end }}
