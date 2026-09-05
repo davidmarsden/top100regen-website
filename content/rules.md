@@ -8,37 +8,45 @@ url: /rules/
 ---
 # Top 100 Regen Rules
 
-## 🏛️ Heritage
-Top 100 Regen follows the proven rules of the legendary [Top 100](https://smtop100.blog) - 25 seasons, 10+ years at the top.
+Top 100 Regen uses the [Top 100 rulebook](https://rules.smtop100.blog/) as its foundation. **Unless a rule is listed below, the Top 100 rule applies.**
 
-## 📋 Regen-Specific Rules
+Regen has a small number of deliberate differences, mainly around squad building and transfer values. These are the rules managers need to know for the current game world.
 
-### 🔢 Squad Cap
+## Regen-specific rules
+
+### Squad cap
 **From Season 4 onwards:**
-- **Max 50 players** across first team and youth squad combined
-- No minimum youth requirement
 
-[Changed from **Seasons 1 & 2:** 19/11 split cap (max 19 first team, min 11 youth), and Season 3 40 cap.]
+- Maximum **50 players** across first team and youth squad combined.
+- There is **no minimum youth-squad requirement**.
 
-### 💸 Transfers
-- **Max cash only bid 50M**
-- No max value for part-exchange transfers
-  
-[Changed from **Seasons 1 &2:** Max bid: 99M including value of any players in exchange]
+Previous versions:
 
-### 👔 Sackings & Expectations
-- Bottom 3 managers automatically sacked
-- Reappointment based on activity and effort
+- Seasons 1–2 used a **19 first-team / minimum 11 youth** structure.
+- Season 3 used a **40-player cap**.
 
-## 📚 Complete Rules
-All [Top 100 rules](https://rules.smtop100.blog/) apply unless overridden above.
+### Transfers
 
-### Key Inherited Rules:
-- **Strict player squad limit**
-- **Binding transfer agreements**
-- **1M max for new database players**
-- **Third-party ownership banned**
-- **Future transfers with transparency**
+- Maximum **cash-only bid: £50m**.
+- There is **no maximum total value** for part-exchange transfers.
+
+Previous version:
+
+- Seasons 1–2 used a **£99m maximum bid**, including the value of players offered in exchange.
+
+### Sackings and expectations
+
+- Managers finishing in the **bottom three** are automatically sacked.
+- Reappointment is considered according to **activity, effort and participation**.
+
+## Everything else
+
+All other [Top 100 rules](https://rules.smtop100.blog/) apply to Regen.
+
+That includes the wider principles around squad limits, binding transfer agreements, new database players, third-party ownership and transparent future transfers.
+
+If there is ever a conflict between an old Regen post and this page, **this page is the current Regen-specific rule reference**, while the shared Top 100 Rules site remains the canonical rulebook for everything not overridden here.
 
 ---
-*"Friendship, Fun, and Fair play" - The Top 100 way*
+
+*Friendship, Fun and Fair play — the Top 100 way.*
