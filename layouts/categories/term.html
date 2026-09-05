@@ -4,17 +4,10 @@
   <header class="archive-intro">
     <span class="eyebrow">REGEN PEOPLE</span>
     <h1>Managers</h1>
-    <p>Top 100 Regen is run by its managers. This page collects manager-related updates published on the Regen site — appointments, departures, transfer bans and other notices about the people running the clubs.</p>
-    <p>Looking for a club of your own? <a href="/join/">See how to join Top 100 Regen →</a></p>
+    <p>Manager-related posts from Top 100 Regen.</p>
   </header>
 
   <section class="archive-on-site">
-    <div class="archive-section-heading">
-      <span class="eyebrow">MANAGER NEWS</span>
-      <h2>Updates</h2>
-      <p>{{ len .Pages }} manager-related posts.</p>
-    </div>
-
     <div class="archive-year">
       <div class="archive-year__posts">
         {{ range .Pages.ByDate.Reverse }}
@@ -26,7 +19,6 @@
               {{ else }}
                 <a href="{{ .Permalink }}">Manager update</a>
               {{ end }}
-              {{ with .Summary }}<small>{{ . | plainify | truncate 150 }}</small>{{ end }}
             </div>
           </article>
         {{ end }}
@@ -49,7 +41,6 @@
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
             <div>
               <a href="{{ .Permalink }}">{{ if .Title }}{{ .Title }}{{ else }}Untitled post{{ end }}</a>
-              {{ with .Summary }}<small>{{ . | plainify | truncate 150 }}</small>{{ end }}
             </div>
           </article>
         {{ end }}
