@@ -1,3 +1,23 @@
+<style>
+  /* Override any sticky/fixed positioning inherited from the underlying theme. */
+  html body header.site-header,
+  html body .site-header,
+  html body .site-header .family-bar,
+  html body .site-header .header-content {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+    transform: none !important;
+  }
+
+  html body .site-header {
+    z-index: auto !important;
+  }
+</style>
+
 <header class="site-header">
   <div class="family-bar">
     <div class="family-bar__inner">
