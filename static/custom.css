@@ -48,12 +48,9 @@ img { max-width: 100%; height: auto; }
 .family-bar a.is-current { border-bottom: 2px solid var(--regen); }
 
 .site-header {
-  background: rgba(255,255,255,.96);
+  background: #fff;
   border-bottom: 1px solid var(--line);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(12px);
+  position: static;
 }
 .header-content {
   max-width: var(--max);
