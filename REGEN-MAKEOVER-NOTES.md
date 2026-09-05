@@ -21,11 +21,23 @@ This is a small, surgical makeover rather than a rebuild.
 - Removes stale “25 seasons / 10 years” hard-coding from the homepage/footer.
 - Keeps Regen-specific Rules as the local differences layer over the canonical Top 100 rulebook.
 - Youth Cup / Shield no longer occupy permanent main navigation; future competition operation belongs in Tournaments.
+- Removes the old waiting-list form; joining is now by recommendation, word of mouth or direct application in Soccer Manager when a club is available.
 
 ## Later tuning
+### Homepage
 - Increase the hero `Top 100 Regen` title contrast against the blue/green background.
 - Restyle the `How it started` links so they read as intentional launch-history links rather than inherited text links.
 - Keep homepage news excerpts short so the page does not become unnecessarily tall again.
+
+### Rules
+- Tighten the spacing above the page title.
+- Give the `current Regen-specific rule reference` sentence a subtle callout treatment.
+- De-emphasise `Previous versions` notes so current rules dominate visually.
+
+### Join
+- Consider presenting the main joining routes as compact action cards/buttons rather than a plain bulleted link list.
+- Keep the Waiting List WhatsApp group prominent because it is the quickest route to hearing about vacancies.
+- Keep wider Top 100 links visually secondary to the Regen-specific joining links.
 
 ## Domain plan
 - `top100regen.website` remains the canonical domain during the makeover.
