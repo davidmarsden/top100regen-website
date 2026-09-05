@@ -20,19 +20,25 @@ Regen has a small number of deliberate differences, mainly around squad building
 - Maximum **50 players** across first team and youth squad combined.
 - There is **no minimum youth-squad requirement**.
 
-Previous versions:
+<details class="rules-history">
+<summary>Previous squad-cap versions</summary>
 
 - Seasons 1–2 used a **19 first-team / minimum 11 youth** structure.
 - Season 3 used a **40-player cap**.
+
+</details>
 
 ### Transfers
 
 - Maximum **cash-only bid: £50m**.
 - There is **no maximum total value** for part-exchange transfers.
 
-Previous version:
+<details class="rules-history">
+<summary>Previous transfer rule</summary>
 
 - Seasons 1–2 used a **£99m maximum bid**, including the value of players offered in exchange.
+
+</details>
 
 ### Sackings and expectations
 
@@ -45,7 +51,9 @@ All other [Top 100 rules](https://rules.smtop100.blog/) apply to Regen.
 
 That includes the wider principles around squad limits, binding transfer agreements, new database players, third-party ownership and transparent future transfers.
 
-If there is ever a conflict between an old Regen post and this page, **this page is the current Regen-specific rule reference**, while the shared Top 100 Rules site remains the canonical rulebook for everything not overridden here.
+<div class="rules-current-reference">
+If there is ever a conflict between an old Regen post and this page, <strong>this page is the current Regen-specific rule reference</strong>, while the shared Top 100 Rules site remains the canonical rulebook for everything not overridden here.
+</div>
 
 ---
 
