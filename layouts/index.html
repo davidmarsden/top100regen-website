@@ -1,0 +1,115 @@
+{{ define "main" }}
+
+<section class="regen-hero">
+  <div class="regen-hero__inner">
+    <div class="regen-kicker">TOP 100 FAMILY · REGEN</div>
+    <h1>Top 100 Regen</h1>
+    <p class="regen-strapline">Same DNA. New generation.</p>
+    <p class="regen-intro">
+      The younger sister world to <a href="https://smtop100.blog">Top 100</a>:
+      100 clubs, five divisions, competitive management and the same commitment to
+      friendship, fun and fair play — with Regen-specific rules where the worlds differ.
+    </p>
+
+    <div class="regen-hero__actions">
+      <a class="button button--primary" href="/join/">Join Regen</a>
+      <a class="button button--secondary" href="/rules/">Regen rules</a>
+    </div>
+
+    <div class="regen-stats" aria-label="Top 100 Regen at a glance">
+      <div class="regen-stat"><strong>100</strong><span>Clubs</span></div>
+      <div class="regen-stat"><strong>5</strong><span>Divisions</span></div>
+      <div class="regen-stat"><strong>S4</strong><span>Current season</span></div>
+      <div class="regen-stat"><strong>Top 100</strong><span>Family</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="regen-family">
+  <div class="regen-family__card">
+    <div>
+      <span class="eyebrow">THE ORIGINAL</span>
+      <h2>Top 100</h2>
+      <p>The long-running original game world: history, editorial, records and the wider Top 100 community.</p>
+    </div>
+    <a href="https://smtop100.blog">Visit Top 100 →</a>
+  </div>
+  <div class="regen-family__card regen-family__card--active">
+    <div>
+      <span class="eyebrow">THE REGENERATION</span>
+      <h2>Top 100 Regen</h2>
+      <p>A newer sister world built on the same principles, with its own managers, seasons and rule variations.</p>
+    </div>
+    <a href="/rules/">See what is different →</a>
+  </div>
+</section>
+
+<section class="regen-gateways" aria-label="Top 100 ecosystem">
+  <a href="https://archive.smtop100.blog/"><span>Archive</span><small>History & records</small></a>
+  <a href="https://tournaments.smtop100.blog/"><span>Tournaments</span><small>Cups & competitions</small></a>
+  <a href="https://awards.smtop100.blog/"><span>Awards</span><small>Voting & honours</small></a>
+  <a href="https://rules.smtop100.blog/"><span>Rules</span><small>Top 100 rulebook</small></a>
+</section>
+
+<div class="regen-section-heading">
+  <span class="eyebrow">FROM REGEN</span>
+  <h2>Latest news</h2>
+</div>
+
+{{ if templates.Exists "partials/microhook-post-list.html" }}
+{{ partial "microhook-post-list.html" . }}
+{{ else }}
+
+{{ if templates.Exists "partials/microhook-before-post-list.html" }}
+{{ partial "microhook-before-post-list.html" . }}
+{{ end }}
+<div class="posts h-feed">
+  <div class="post_list" role="main">
+    {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
+    {{ range .Paginator.Pages }}
+    <article class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
+      {{ if templates.Exists "partials/microhook-post-list-byline.html" }}
+      {{ partial "microhook-post-list-byline.html" . }}
+      {{ else }}
+      <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "2 Jan 2006" }}</time></a>
+      {{ end }}
+      {{ if .Title }}
+        <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ if in .RawContent "<!--more-->" }}
+          <div class="p-summary">
+            {{ $splitContents := split .RawContent "<!--more-->" }}
+            {{ $summary := index $splitContents 0 }}
+            {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
+            {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
+            {{ $summary | markdownify }}
+            <p><a class="read-more" href="{{ .Permalink }}">Read more →</a></p>
+          </div>
+        {{ else if .Params.custom_summary }}
+          <div class="p-summary">{{ .Summary | safeHTML }}</div>
+        {{ else }}
+          <div class="e-content">{{ .Content }}</div>
+        {{ end }}
+      {{ else }}
+        <div class="e-content">{{ .Content }}</div>
+      {{ end }}
+      {{ if templates.Exists "partials/microhook-below-post-in-list.html" }}
+      {{ partial "microhook-below-post-in-list.html" . }}
+      {{ end }}
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ if templates.Exists "partials/microhook-after-post-list.html" }}
+{{ partial "microhook-after-post-list.html" . }}
+{{ end }}
+{{ if templates.Exists "partials/microhook-pagination.html" }}
+{{ partial "microhook-pagination.html" . }}
+{{ else }}
+<nav class="post-nav">
+  {{ if $paginator.HasPrev }}<span class="prev"><a href="{{ $paginator.Prev.URL }}">← Newer posts</a></span>{{ end }}
+  {{ if $paginator.HasNext }}<span class="next"><a href="{{ $paginator.Next.URL }}">Older posts →</a></span>{{ end }}
+</nav>
+{{ end }}
+{{ end }}
+
+{{ end }}
