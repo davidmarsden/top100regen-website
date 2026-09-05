@@ -22,6 +22,11 @@ This is a small, surgical makeover rather than a rebuild.
 - Keeps Regen-specific Rules as the local differences layer over the canonical Top 100 rulebook.
 - Youth Cup / Shield no longer occupy permanent main navigation; future competition operation belongs in Tournaments.
 
+## Later tuning
+- Increase the hero `Top 100 Regen` title contrast against the blue/green background.
+- Restyle the `How it started` links so they read as intentional launch-history links rather than inherited text links.
+- Keep homepage news excerpts short so the page does not become unnecessarily tall again.
+
 ## Domain plan
 - `top100regen.website` remains the canonical domain during the makeover.
 - Planned future canonical home: `regen.smtop100.blog`.
