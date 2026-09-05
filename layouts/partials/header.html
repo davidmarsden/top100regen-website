@@ -16,6 +16,16 @@
   html body .site-header {
     z-index: auto !important;
   }
+
+  /* The parent theme applies a purple background to visited links. Put this
+     override here, after the theme styles have loaded, so it wins everywhere. */
+  html body a:visited,
+  html body a:link {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
 </style>
 
 <header class="site-header">
