@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="/top100-family.css">
+
 <style>
-  /* Override any sticky/fixed positioning inherited from the underlying theme. */
+  /* Override sticky/fixed positioning inherited from the underlying theme. */
   html body header.site-header,
   html body .site-header,
   html body .site-header .family-bar,
@@ -13,12 +15,9 @@
     transform: none !important;
   }
 
-  html body .site-header {
-    z-index: auto !important;
-  }
+  html body .site-header { z-index: auto !important; }
 
-  /* The parent theme applies a purple background to visited links. Put this
-     override here, after the theme styles have loaded, so it wins everywhere. */
+  /* The parent theme applies a purple background to visited links. */
   html body a:visited,
   html body a:link {
     background: transparent !important;
@@ -27,7 +26,6 @@
     box-shadow: none !important;
   }
 
-  /* Final presentation tuning. */
   html body .regen-hero h1 {
     color: #fff !important;
     text-shadow: 0 2px 18px rgba(0,0,0,.24);
@@ -35,13 +33,9 @@
 
   html body .regen-hero .button,
   html body .regen-hero .button:link,
-  html body .regen-hero .button:visited {
-    color: #fff !important;
-  }
+  html body .regen-hero .button:visited { color: #fff !important; }
 
-  html body .regen-family--secondary {
-    margin-top: 1.5rem;
-  }
+  html body .regen-family--secondary { margin-top: 1.5rem; }
 
   html body .launch-links {
     display: grid;
@@ -62,14 +56,8 @@
     text-decoration: none;
   }
 
-  html body .launch-links a:last-child {
-    border-bottom: 0;
-  }
-
-  html body .launch-links span {
-    color: var(--regen-deep);
-    flex: 0 0 auto;
-  }
+  html body .launch-links a:last-child { border-bottom: 0; }
+  html body .launch-links span { color: var(--regen-deep); flex: 0 0 auto; }
 
   html body .rules-history {
     margin: .8rem 0 1.35rem;
@@ -87,9 +75,7 @@
     color: var(--muted);
   }
 
-  html body .rules-history ul {
-    margin-bottom: .2rem;
-  }
+  html body .rules-history ul { margin-bottom: .2rem; }
 
   html body .rules-current-reference {
     margin: 1.5rem 0;
@@ -108,10 +94,7 @@
     background: #fff;
   }
 
-  html body form[action*="/users/subscribe/"] label {
-    display: block;
-    margin-bottom: .45rem;
-  }
+  html body form[action*="/users/subscribe/"] label { display: block; margin-bottom: .45rem; }
 
   html body form[action*="/users/subscribe/"] input[type="email"] {
     width: min(100%, 360px);
@@ -143,22 +126,31 @@
   }
 </style>
 
-<header class="site-header">
+<header class="site-header top100-family-shell">
   <div class="family-bar">
     <div class="family-bar__inner">
-      <span>TOP 100 FAMILY</span>
-      <nav aria-label="Top 100 family">
-        <a href="https://smtop100.blog/">Top 100</a>
-        <a href="https://archive.smtop100.blog/">Archive</a>
-        <a href="https://tournaments.smtop100.blog/">Tournaments</a>
+      <a class="top100-family-brand" href="https://smtop100.micro.blog/" aria-label="Visit Top 100">
+        <span class="top100-family-wordmark"><span>Top</span><strong>100</strong></span>
+        <span class="top100-family-pitch" aria-hidden="true"><i></i></span>
+        <small>Managers. Stories. A bigger game.</small>
+      </a>
+
+      <div class="top100-family-product">
+        <span>TOP 100</span>
+        <strong>Regen</strong>
+      </div>
+
+      <nav class="top100-family-nav" aria-label="Top 100 family">
+        <a href="https://smtop100.micro.blog/">Top 100</a>
+        <a href="https://archive.smtop100.blog/">Stats &amp; History</a>
+        <a href="https://youth-cup.smtop100.blog/">Tournaments</a>
         <a href="https://awards.smtop100.blog/">Awards</a>
-        <a href="https://rules.smtop100.blog/">Rules</a>
         <a class="is-current" href="/">Regen</a>
       </nav>
     </div>
   </div>
 
-  <div class="header-content">
+  <div class="header-content regen-local-header">
     <a href="/" class="regen-brand" title="Top 100 Regen — home">
       <img src="https://top100regen.website/uploads/2025/6a80caca91.png" alt="" class="site-logo">
       <span class="regen-brand__text">
