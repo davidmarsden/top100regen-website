@@ -1,0 +1,38 @@
+[build]
+  publish = "redirect-site"
+
+[[redirects]]
+  from = "/"
+  to = "https://smtop100.blog/regen/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/rules/"
+  to = "https://smtop100.blog/regen/rules/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/join/"
+  to = "https://smtop100.blog/regen/join/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/archive/"
+  to = "https://smtop100.blog/regen/archive/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/subscribe/"
+  to = "https://smtop100.blog/subscribe/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "https://smtop100.blog/:splat"
+  status = 301
+  force = true
