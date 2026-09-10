@@ -12,7 +12,7 @@ The 2026 makeover is a small, surgical refresh rather than a rebuild.
 
 ## Structure
 - Thin Top 100 family navigation:
-  Top 100 · Archive · Tournaments · Awards · Rules · Regen
+  Top 100 · Stats & History · Tournaments · Awards · Voting · Regen
 - Regen-local navigation:
   News · Archive · Rules · Subscribe · Join
 - Managers remains a category, not a first-class navigation destination.
@@ -21,7 +21,7 @@ The 2026 makeover is a small, surgical refresh rather than a rebuild.
 
 ## Content
 - Removed stale Season 1 / 25 seasons / 10 years hard-coding.
-- Regen Rules now work as an exceptions layer over the canonical Top 100 rulebook.
+- Regen Rules work as an exceptions layer over the canonical Top 100 rulebook.
 - Historical rule versions are retained but visually de-emphasised.
 - Youth Cup / Shield are no longer permanent navigation items; future competition operation belongs in Tournaments.
 - Removed the old waiting-list form. Joining is by recommendation, word of mouth or direct application in Soccer Manager when a club is available.
@@ -42,8 +42,10 @@ The 2026 makeover is a small, surgical refresh rather than a rebuild.
 - Styled the Subscribe form and improved small-screen form layout.
 - Managers removed from header/footer navigation.
 
-## Domain plan
-- `top100regen.website` remains canonical for now.
-- Planned future canonical home: `regen.smtop100.blog`.
-- Do **not** move Regen first. Complete the main `smtop100.blog` migration to Micro.blog and stabilise the family navigation/URL structure before moving Regen underneath it.
-- After the main-site cutover is proven, connect `regen.smtop100.blog`, update Micro.blog site/base URL and social-card metadata, and redirect `top100regen.website` to the new canonical domain.
+## Domain integration
+- Canonical target: `regen.smtop100.blog`.
+- Main `smtop100.blog` migration is complete, so Regen integration can proceed now.
+- Update family navigation and internal ecosystem links to the live Top 100 domains before cutover.
+- Connect `regen.smtop100.blog` to the existing Regen Micro.blog site and make it canonical.
+- Verify generated URLs, feeds, social-card metadata and subscriptions on the new host.
+- Keep `top100regen.website` as a legacy domain and redirect it to `https://regen.smtop100.blog/` once the new domain is proven.
