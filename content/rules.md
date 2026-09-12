@@ -8,7 +8,7 @@ url: /rules/
 ---
 # Top 100 Regen Rules
 
-Top 100 Regen uses the [Top 100 rulebook](https://rules.smtop100.blog/) as its foundation. **Unless a rule is listed below, the Top 100 rule applies.**
+Top 100 Regen uses the [Top 100 rulebook](https://smtop100.blog/rules/) as its foundation. **Unless a rule is listed below, the Top 100 rule applies.**
 
 Regen has a small number of deliberate differences, mainly around squad building and transfer values. These are the rules managers need to know for the current game world.
 
@@ -47,12 +47,12 @@ Regen has a small number of deliberate differences, mainly around squad building
 
 ## Everything else
 
-All other [Top 100 rules](https://rules.smtop100.blog/) apply to Regen.
+All other [Top 100 rules](https://smtop100.blog/rules/) apply to Regen.
 
 That includes the wider principles around squad limits, binding transfer agreements, new database players, third-party ownership and transparent future transfers.
 
 <div class="rules-current-reference">
-If there is ever a conflict between an old Regen post and this page, <strong>this page is the current Regen-specific rule reference</strong>, while the shared Top 100 Rules site remains the canonical rulebook for everything not overridden here.
+If there is ever a conflict between an old Regen post and this page, <strong>this page is the current Regen-specific rule reference</strong>, while the main Top 100 rulebook remains canonical for everything not overridden here.
 </div>
 
 ---
